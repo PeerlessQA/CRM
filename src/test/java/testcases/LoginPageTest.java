@@ -3,9 +3,7 @@ package testcases;
 import base.TestBase;
 import net.bytebuddy.implementation.bind.annotation.Super;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.LoginPage;
 
@@ -19,7 +17,7 @@ public class LoginPageTest extends TestBase {
     }
 
 
-    @BeforeMethod
+    @BeforeClass
      public void setup (){
         initialization();
         loginPage = new LoginPage();
@@ -44,7 +42,7 @@ public class LoginPageTest extends TestBase {
 
 
 
-    @AfterMethod
+    @AfterClass
     private  void tearDown (){
         driver.quit();
     }

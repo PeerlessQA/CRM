@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends TestBase  {
 
-    WebDriver driver = null;
 
     // POM - object Repository
 

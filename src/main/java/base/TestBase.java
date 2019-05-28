@@ -35,7 +35,25 @@ public class TestBase {
 
         public static void initialization (){
         String browserName = prop.getProperty("browser");
+
         if (browserName.equals("chrome")){
+
+            if(System.getProperty("os.arch").toLowerCase().equalsIgnoreCase("amd64")){
+                if(System.getProperty("os.name").toLowerCase().indexOf("windows")>=0){
+                    System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/windows/chromedriver");
+                }
+                else
+                {
+                    System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/ubuntu/chromedriver");
+
+                }
+            }
+            else{
+                System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/chromedriver");
+
+
+            }
+
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
@@ -43,8 +61,7 @@ public class TestBase {
             System.setProperty("webdriver.gecko.driver","F:/opt/geckodriver.exe");
 
         }
-        }
-        {
+
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
             driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
