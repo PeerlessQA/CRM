@@ -45,13 +45,10 @@ public class TestBase {
                 else
                 {
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/ubuntu/chromedriver");
-
                 }
             }
             else{
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/chromedriver");
-
-
             }
 
             WebDriverManager.chromedriver().setup();

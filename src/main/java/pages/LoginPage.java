@@ -16,7 +16,7 @@ public class LoginPage extends TestBase  {
     By userName = By.id("username");
     By password = By.id("password");
     By login = By.id("btnlogin");
-    By title = By.id("logged_in");
+    By loginPageTitle = By.id("logged_in");
 
 
 
@@ -34,6 +34,8 @@ public class LoginPage extends TestBase  {
     public String ValidateWelcome () {
         return driver.findElement(welcome).getText();
     }
+
+
     // Validate Footer
     private boolean ValidateFooterText (){
         return driver.findElement(footer).isDisplayed();
@@ -41,24 +43,21 @@ public class LoginPage extends TestBase  {
 
     //Set user name
     public void setUserName(String strUserName){
+
         driver.findElement(userName).sendKeys(strUserName);
     }
 
     //Set Password
     public void setPassword(String strPassword){
+
         driver.findElement(password).sendKeys(strPassword);
     }
 
     //Click Loging
     public void clickLogin( ){
+
         driver.findElement(login).click();
     }
-
-    //Get the User name from Home Page
-    public String getTitle() {
-        return driver.findElement(title).getText();
-    }
-
 
     public HomePage loginToCRM(String strUserName,String strPasword ){
         this.setUserName(strUserName);
