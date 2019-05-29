@@ -1,7 +1,6 @@
 package testcases;
 
 import base.TestBase;
-import net.bytebuddy.implementation.bind.annotation.Super;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.HomePage;
@@ -16,7 +15,6 @@ public class LoginPageTest extends TestBase {
         super();
     }
 
-
     @BeforeClass
      public void setup (){
         initialization();
@@ -25,8 +23,8 @@ public class LoginPageTest extends TestBase {
 
     @Test (priority = 1)
     public void loginPageTitleTest(){
-       String tital = loginPage.validateLogingPageTital();
-        Assert.assertEquals(tital,"Peerless");
+       String logingPageTital = loginPage.validateLogingPageTital();
+        Assert.assertEquals(logingPageTital,"Peerless" ,"Login Page Title Not Matched" );
     }
 
     @Test (priority = 2)
@@ -36,17 +34,21 @@ public class LoginPageTest extends TestBase {
     }
 
     @Test (priority = 3)
-    public void logingtest(){
-      homePage = loginPage.loginToCRM(prop.getProperty("username"),prop.getProperty("password"));
+    public void welcomMessageText(){
+        String welcom  = loginPage.ValidateWelcome();
+        Assert.assertEquals(welcom,"Introducing the all new Peerless Web CRM" , "Login Page Welcom Message Not Matched");
     }
 
-
+    @Test (priority = 4)
+    public void logingtest(){
+      homePage = loginPage.loginToCRM(prop.getProperty("username"),prop.getProperty("password"));
+      //Assert.assertTrue(" In To CRM ");
+    }
 
     @AfterClass
     private  void tearDown (){
+
         driver.quit();
     }
-
-
 
 }
