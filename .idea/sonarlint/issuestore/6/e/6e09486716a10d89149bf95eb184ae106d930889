@@ -1,0 +1,13 @@
+
+ksquid:S1192)"HDefine a constant instead of duplicating this literal "os.arch" 4 times.(ßÊŞÿÿÿÿÿ8Ñ†Ù÷¯-
+usquid:S1192+"XDefine a constant instead of duplicating this literal "webdriver.chrome.driver" 3 times.(ôºú+8Ñ†Ù÷¯-
+?squid:S3010"!Remove this assignment of "prop".(âÅä8Ñ†Ù÷¯-
+Osquid:S1444",Make this "public static driver" field final(ÜçÁÈûÿÿÿÿ8Ñ†Ù÷¯-
+Msquid:S1444"*Make this "public static prop" field final(¶İ»şÿÿÿÿ8Ñ†Ù÷¯-
+:squid:S1118"Hide this public constructor.( Ù‚}8µ€İ÷¯-
+Œ"squid:ClassVariableVisibilityCheck"RMake driver a static final constant or non-public and provide accessors if needed.(ÜçÁÈûÿÿÿÿ8Ñ†Ù÷¯-
+Š"squid:ClassVariableVisibilityCheck"PMake prop a static final constant or non-public and provide accessors if needed.(¶İ»şÿÿÿÿ8Ñ†Ù÷¯-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ†Ù÷¯-
+squid:S1192+"bDefine a constant instead of duplicating this literal "src/main/resources/chrome_driver/" 3 times.(ôºú+8Ñ†Ù÷¯-
+=squid:S2386"Make member "prop" "protected".(âÅä8Ñ†Ù÷¯-
+Fsquid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ†Ù÷¯-

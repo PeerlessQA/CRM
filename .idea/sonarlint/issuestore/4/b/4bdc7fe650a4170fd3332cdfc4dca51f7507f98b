@@ -1,0 +1,7 @@
+
+fsquid:S00100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éî˜ý
+esquid:UselessImportCheck":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8”Éô÷¯-
+asquid:UnusedPrivateMethod&"7Remove this unused private "ValidateFooterText" method.(ˆ†ß£ûÿÿÿÿ
+esquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°•úz
+gsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ã«Ãýÿÿÿÿ
+ksquid:S00100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ†ß£ûÿÿÿÿ

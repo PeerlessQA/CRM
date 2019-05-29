@@ -1,0 +1,8 @@
+
+ssquid:S3008"\Rename this field "PAGE_LOAD_TIMEOUT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ùÕ…
+osquid:S3008"XRename this field "IMPLICIT_WAIT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëñ›ó
+Nsquid:S1444"7Make this "public static PAGE_LOAD_TIMEOUT" field final(£ùÕ…
+Jsquid:S1444"3Make this "public static IMPLICIT_WAIT" field final(Ëñ›ó
+ã"squid:ClassVariableVisibilityCheck"]Make PAGE_LOAD_TIMEOUT a static final constant or non-public and provide accessors if needed.(£ùÕ…
+á"squid:ClassVariableVisibilityCheck"YMake IMPLICIT_WAIT a static final constant or non-public and provide accessors if needed.(Ëñ›ó
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(§”®Ø˚ˇˇˇˇ
