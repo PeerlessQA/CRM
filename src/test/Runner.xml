@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="CRM Test Suite" annotations ="annotations" parallel="tests">
+
+    <test name="Login Page Test">
+        <classes>
+            <class name="testcases.LoginPageTest"/></classes> </test>
+
+    <test name="Home Page Test">
+        <classes>
+            <class name="testcases.HomePageTest"/></classes> </test>
+
+
+</suite>

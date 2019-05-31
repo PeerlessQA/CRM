@@ -24,6 +24,9 @@ public class HomePage extends TestBase {
         return driver.getTitle();
     }
 
+    // Validate Page Tital
+
+
     // Validate Loged In user name
     public  String validateLogedInUserName (){
         return driver.findElement(logedInUser).getText();

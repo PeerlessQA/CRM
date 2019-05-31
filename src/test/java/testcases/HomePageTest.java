@@ -22,22 +22,20 @@ public class HomePageTest extends TestBase {
         loginPage = new LoginPage();
         homePage = loginPage.loginToCRM(prop.getProperty("username"),prop.getProperty("password"));
 
+
     }
 
-    @Test (priority = 1)
+    @Test (priority =2)
     public  void validatePageTitleTest(){
-         String homePageTitle = homePage.validateLogingPageTital();
-        Assert .assertEquals(homePageTitle , "Home Page" , "Home Page Title Not Matched");
+        String homePageTitle = homePage.validateLogingPageTital();
+        Assert .assertEquals(homePageTitle , "Home Page" , "Home Page Title Not Matched -");
     }
 
-    @Test (priority = 2)
+    @Test (priority =1)
     public void validateUserNameTest(){
         String homePageUserName = homePage.validateLogedInUserName();
-        Assert.assertEquals(homePageUserName,("welcome " + prop.getProperty( "user")),"Loged In Unser Name Not Matched ");
+        Assert.assertEquals(homePageUserName,("Welcome " + prop.getProperty( "user")),"Loged In Unser Name Not Matched -");
     }
-
-
-
 
 
     @AfterClass

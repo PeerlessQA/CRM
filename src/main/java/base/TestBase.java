@@ -19,11 +19,11 @@ public class TestBase {
     public static WebDriver driver;
     public static Properties prop;
     public static EventFiringWebDriver e_driver;
-    public static WebDriverManager eventListener;
+    public static WebEventListener eventListener;
 
 
-    public static final long PAGE_LOAD_TIMEOUT = 600 ;
-    public static final long IMPLICIT_WAIT = 600;
+    public static final long PAGE_LOAD_TIMEOUT = 40 ;
+    public static final long IMPLICIT_WAIT = 40;
 
     public TestBase(){
 
@@ -48,13 +48,7 @@ public class TestBase {
                 if(System.getProperty("os.name").toLowerCase().indexOf("windows")>=0){
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/windows/chromedriver");
                 }
-                else
-                {
-                    System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/ubuntu/chromedriver");
-                }
-            }
-            else{
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_driver/" + System.getProperty("os.arch") + "/chromedriver");
+
             }
 
             WebDriverManager.chromedriver().setup();

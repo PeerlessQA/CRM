@@ -21,32 +21,32 @@ public class LoginPageTest extends TestBase {
         loginPage = new LoginPage();
     }
 
-    @Test (priority = 1)
+    @Test (priority =1)
     public void loginPageTitleTest(){
        String logingPageTital = loginPage.validateLogingPageTital();
-        Assert.assertEquals(logingPageTital,"Peerless" ,"Login Page Title Not Matched" );
+        Assert.assertEquals(logingPageTital,"Peerless" ,"Login Page Title Not Matched -" );
     }
 
-    @Test (priority = 2)
+    @Test (priority =2)
     public void peerlesslogoTest(){
        boolean flag = loginPage.ValidatePeerlessLogo();
         Assert.assertTrue(flag);
     }
 
-    @Test (priority = 3)
+    @Test (priority =3)
     public void welcomMessageText(){
         String welcom  = loginPage.ValidateWelcome();
-        Assert.assertEquals(welcom,"Introducing the all new Peerless Web CRM" , "Login Page Welcom Message Not Matched");
+        Assert.assertEquals(welcom,"Introducing the all new Peerless Web CRM" , "Login Page Welcom Message Not Matched -");
     }
 
-    @Test (priority = 4)
+    @Test (priority =4)
     public void logingtest(){
       homePage = loginPage.loginToCRM(prop.getProperty("username"),prop.getProperty("password"));
       //Assert.assertTrue(" In To CRM ");
     }
 
     @AfterClass
-    private  void tearDown (){
+    private void tearDown (){
 
         driver.quit();
     }

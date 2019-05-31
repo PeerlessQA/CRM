@@ -3,9 +3,12 @@
 <suite name="WEB CRM TEST SUITE " verbose="1" configfailurepolicy="continue">
 <test name="CRM">
     <classes>
+
         <class name="testcases.LoginPageTest"/>
         <class name="testcases.HomePageTest"/>
 
     </classes>
 </test>
 </suite>
+
+
