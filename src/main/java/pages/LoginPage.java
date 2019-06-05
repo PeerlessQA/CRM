@@ -13,7 +13,7 @@ public class LoginPage extends TestBase  {
     By welcome = By.xpath("//*[@id=\"about\"]/div[1]/div/h1");
     By footer = By.xpath("//*[@id=\"about\"]/footer/div");
 
-    By userName = By.id("username") ;
+    By userName = By.id("username1") ;
     By password = By.id("password");
     By login = By.id("btnlogin");
     By loginPageTitle = By.id("logged_in");
