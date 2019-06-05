@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRM Test Suite" duration-ms="42047" started-at="2019-06-05T10:44:06Z" finished-at="2019-06-05T10:44:48Z">
+    <groups>
+    </groups>
+    <test name="Login Page Test" duration-ms="16303" started-at="2019-06-05T10:44:06Z" finished-at="2019-06-05T10:44:22Z">
+      <class name="testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoginPageTest@2921a36a]" name="setup" is-config="true" duration-ms="14648" started-at="2019-06-05T20:44:06Z" finished-at="2019-06-05T20:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:testcases.LoginPageTest@2921a36a]" name="loginPageTitleTest" duration-ms="61" started-at="2019-06-05T20:44:20Z" finished-at="2019-06-05T20:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="peerlesslogoTest()[pri:2, instance:testcases.LoginPageTest@2921a36a]" name="peerlesslogoTest" duration-ms="148" started-at="2019-06-05T20:44:21Z" finished-at="2019-06-05T20:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peerlesslogoTest -->
+        <test-method status="PASS" signature="welcomMessageText()[pri:3, instance:testcases.LoginPageTest@2921a36a]" name="welcomMessageText" duration-ms="57" started-at="2019-06-05T20:44:21Z" finished-at="2019-06-05T20:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomMessageText -->
+        <test-method status="PASS" signature="logingtest()[pri:4, instance:testcases.LoginPageTest@2921a36a]" name="logingtest" duration-ms="463" started-at="2019-06-05T20:44:21Z" finished-at="2019-06-05T20:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logingtest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2921a36a]" name="tearDown" is-config="true" duration-ms="719" started-at="2019-06-05T20:44:21Z" finished-at="2019-06-05T20:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+    <test name="Home Page Test" duration-ms="25166" started-at="2019-06-05T10:44:23Z" finished-at="2019-06-05T10:44:48Z">
+      <class name="testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.HomePageTest@588545ac]" name="setup" is-config="true" duration-ms="6157" started-at="2019-06-05T20:44:23Z" finished-at="2019-06-05T20:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateUserNameTest()[pri:1, instance:testcases.HomePageTest@588545ac]" name="validateUserNameTest" duration-ms="18172" started-at="2019-06-05T20:44:29Z" finished-at="2019-06-05T20:44:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserNameTest -->
+        <test-method status="PASS" signature="validatePageTitleTest()[pri:2, instance:testcases.HomePageTest@588545ac]" name="validatePageTitleTest" duration-ms="9" started-at="2019-06-05T20:44:47Z" finished-at="2019-06-05T20:44:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.HomePageTest@588545ac]" name="tearDown" is-config="true" duration-ms="820" started-at="2019-06-05T20:44:47Z" finished-at="2019-06-05T20:44:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.HomePageTest -->
+    </test> <!-- Home Page Test -->
+  </suite> <!-- CRM Test Suite -->
+</testng-results>
