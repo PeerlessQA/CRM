@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e773eb6-798a-441e-bc4e-fd24a80c3ce7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e773eb6-798a-441e-bc4e-fd24a80c3ce7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="272">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="1783" />
     <option name="height" value="965" />
@@ -385,9 +383,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="F__CRM_POM_30_5_src_test_java_testNgRunner_xml - 2019.05.31 at 12h 13m 27s.xml">
-      <configuration name="F:/CRM_POM_30_5/src/test/java/testNgRunner.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="F__CRM_POM_30_5_src_test_testNgRunner_xml - 2019.05.31 at 12h 16m 46s.xml">
       <configuration name="F:/CRM_POM_30_5/src/test/testNgRunner.xml" configurationId="TestNG" />
     </history-entry>
@@ -415,9 +410,12 @@
     <history-entry file="F__CRM_POM_30_5_src_test_Runner_xml - 2019.06.05 at 19h 06m 02s.xml">
       <configuration name="F:/CRM_POM_30_5/src/test/Runner.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="F__CRM_POM_30_5_src_test_Runner_xml - 2019.06.05 at 19h 56m 03s.xml">
+      <configuration name="F:/CRM_POM_30_5/src/test/Runner.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
@@ -674,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="272">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
