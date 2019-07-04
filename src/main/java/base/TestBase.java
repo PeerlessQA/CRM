@@ -1,10 +1,14 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import util.WebEventListener;
 import java.io.FileNotFoundException;
 
@@ -39,7 +43,7 @@ public class TestBase {
            }
         }
 
-        public static void initialization (){
+    public static void initialization (){
         String browserName = prop.getProperty("browser");
 
         if (browserName.equals("chrome")){
@@ -55,7 +59,7 @@ public class TestBase {
             driver = new ChromeDriver();
         }
         else if (browserName.equals("Firefox")){
-            System.setProperty("webdriver.gecko.driver","F:/opt/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver","C:/opt/geckodriver.exe");
 
         }
 
@@ -73,5 +77,22 @@ public class TestBase {
             driver.get(prop.getProperty("url"));
 
         }
+
+    public static void waitForPageLoaded() {
+        ExpectedCondition<Boolean> expectation = new
+                ExpectedCondition<Boolean>() {
+                    public Boolean apply(WebDriver driver) {
+                        return ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete");
+                    }
+                };
+        try {
+            Thread.sleep(1000);
+            WebDriverWait wait = new WebDriverWait(driver, 30);
+            wait.until(expectation);
+        } catch (Throwable error) {
+            Assert.fail("Timeout waiting for Page Load Request to complete.");
+        }
+    }
+
 }
 

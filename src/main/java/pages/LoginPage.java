@@ -51,7 +51,7 @@ public class LoginPage extends TestBase  {
     public void setPassword(String strPassword){
 
         driver.findElement(password).sendKeys(strPassword);
-    }
+}
 
     //Click Loging
     public void clickLogin( ){

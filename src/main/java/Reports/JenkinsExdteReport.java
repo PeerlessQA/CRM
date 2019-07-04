@@ -1,9 +1,11 @@
+/*
 package Reports;
 
-import com.relevantcodes.extentreports.*;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
-import org.testng.IReporter;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -11,17 +13,13 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public class ExtentReporterNG implements IReporter {
+public class JenkinsExdteReport implements IReporter{
+
     private ExtentReports extent;
-    private ExtentReports jenkinsExtent;
 
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 
-        String date = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
-        String time = new SimpleDateFormat("HHmmss").format(Calendar.getInstance().getTime());
-
-        extent = new ExtentReports (System.getProperty("user.dir") +"/CRM Test Report/"+date+"/"+time+".html", false);
-        jenkinsExtent = new ExtentReports (System.getProperty("user.dir") +"/Jenkins Report/extend.html", true);
+        //extent = new ExtentReports (System.getProperty("user.dir") +"Jensking Report.html", true);
 
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
@@ -37,9 +35,6 @@ public class ExtentReporterNG implements IReporter {
 
         extent.flush();
         extent.close();
-        jenkinsExtent.flush();
-        jenkinsExtent.close();
-
     }
 
     private void buildTestNodes(IResultMap tests, LogStatus status) {
@@ -47,7 +42,6 @@ public class ExtentReporterNG implements IReporter {
 
         if (tests.size() > 0) {
             for (ITestResult result : tests.getAllResults()) {
-                jenkinsExtent.startTest(result.getMethod().getMethodName());
                 test = extent.startTest(result.getMethod().getMethodName());
                 test.getTest().setStartedTime(getTime(result.getStartMillis()));
                 test.getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -63,12 +57,9 @@ public class ExtentReporterNG implements IReporter {
                 test.log(status, message);
 
                 extent.endTest(test);
-                jenkinsExtent.endTest(test);
             }
         }
     }
-
-
 
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
@@ -76,4 +67,4 @@ public class ExtentReporterNG implements IReporter {
         return calendar.getTime();
     }
 
-}
+}*/
